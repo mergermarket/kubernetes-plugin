@@ -1,0 +1,39 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "07:00"
+    timezone: Europe/London
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.jenkins-ci.plugins.workflow:workflow-cps
+    versions:
+    - "2.87"
+    - "2.88"
+    - "2.89"
+  - dependency-name: org.jenkins-ci.plugins:ssh-agent
+    versions:
+    - "1.20"
+    - "1.21"
+  - dependency-name: org.jenkins-ci.plugins:structs
+    versions:
+    - "1.20"
+    - "1.21"
+  - dependency-name: org.jenkinsci.plugins:pipeline-model-definition
+    versions:
+    - 1.7.2
+    - 1.8.0
+    - 1.8.2
+    - 1.8.3
+  - dependency-name: org.apache.commons:commons-lang3
+    versions:
+    - "3.11"
+- package-ecosystem: docker
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "07:00"
+    timezone: Europe/London
+  open-pull-requests-limit: 10

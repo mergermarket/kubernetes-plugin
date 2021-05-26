@@ -134,7 +134,7 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-support</artifactId>
-      <version>3.0</version>
+      <version>3.4</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -146,7 +146,7 @@
     <dependency> <!-- SemaphoreStep -->
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-support</artifactId>
-      <version>3.0</version>
+      <version>3.4</version>
       <classifier>tests</classifier>
       <scope>test</scope>
     </dependency>
